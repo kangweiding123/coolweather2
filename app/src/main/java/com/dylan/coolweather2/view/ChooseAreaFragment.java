@@ -1,4 +1,4 @@
-package com.dylan.coolweather2;
+package com.dylan.coolweather2.view;
 
 
 import android.app.ProgressDialog;
@@ -15,6 +15,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.dylan.coolweather2.R;
 import com.dylan.coolweather2.db.City;
 import com.dylan.coolweather2.db.County;
 import com.dylan.coolweather2.db.Province;
@@ -145,7 +146,7 @@ public class ChooseAreaFragment extends Fragment {
             currentLevel = LEVEL_PROVINCE;
         } else {
             String address = "http://guolin.tech/api/china";
-            queryFromServer(address, "city");
+            queryFromServer(address, "province");
         }
     }
 

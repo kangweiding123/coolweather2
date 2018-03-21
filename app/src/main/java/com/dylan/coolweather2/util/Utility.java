@@ -79,7 +79,7 @@ public class Utility {
                     JSONObject provinceObject = allProvinces.getJSONObject(i);
                     County county = new County();
                     county.setCountyName(provinceObject.getString("name"));
-                    county.setWeatherId(provinceObject.getInt("weather_id"));
+                    county.setWeatherId(provinceObject.getString("weather_id"));
                     county.setCityId(CityId);
                     county.save();
                 }
